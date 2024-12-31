@@ -13,7 +13,7 @@ baden_wuerttemberg_url = "europe/germany/baden-wuerttemberg/"
 bayern_url = "europe/germany/bayern/"
 brazil_url = "south-america/brazil/"
 canada_url = "north-america/canada/"
-england_url = "europe/great-britain/england/"
+england_url = "europe/united-kingdom/england/"
 france_url = "europe/france/"
 gb_url = "europe/united-kingdom/"
 germany_url = "europe/germany/"
@@ -240,7 +240,7 @@ class England:
         return self.available
 
 
-class GreatBritain:
+class UnitedKingdom:
     regions = ["england", "scotland", "wales"]
     england = England()
 
@@ -248,8 +248,8 @@ class GreatBritain:
     available.sort()
 
     country = {
-        "name": "great-britain" + suffix,
-        "url": URL + europe_url + "great-britain" + suffix,
+        "name": "united-kingdom" + suffix,
+        "url": URL + europe_url + "united-kingdom" + suffix,
     }
 
     # Create data sources
@@ -877,7 +877,7 @@ class CentralAmerica:
 class Europe:
     # Country specific subregions
     france = France()
-    great_britain = GreatBritain()
+    united_kingdom = UnitedKingdom()
     italy = Italy()
     russia = Russia()
     poland = Poland()
@@ -904,6 +904,7 @@ class Europe:
         "georgia",
         "germany",
         "great_britain",
+        "united_kingdom",
         "greece",
         "hungary",
         "iceland",
@@ -1141,7 +1142,7 @@ class SubRegions:
             "canada",
             "france",
             "germany",
-            "great_britain",
+            "united_kingdom",
             "italy",
             "japan",
             "netherlands",
@@ -1156,7 +1157,7 @@ class SubRegions:
         self.canada = Canada()
         self.france = France()
         self.germany = Germany()
-        self.great_britain = GreatBritain()
+        self.united_kingdom = UnitedKingdom()
         self.italy = Italy()
         self.japan = Japan()
         self.netherlands = Netherlands()

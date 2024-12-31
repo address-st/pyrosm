@@ -13,12 +13,12 @@ from pyrosm.data.geofabrik import (
     Canada,
     France,
     Germany,
-    GreatBritain,
     Italy,
     Japan,
     Netherlands,
     Poland,
     Russia,
+    UnitedKingdom,
     USA,
     SubRegions,
 )
